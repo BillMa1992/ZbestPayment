@@ -54,7 +54,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    commonjs (0.2.6)
     devise (3.1.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -75,8 +74,6 @@ GEM
       railties (>= 3.1.0)
       turbolinks
     json (1.8.2)
-    less (2.2.1)
-      commonjs (~> 0.2.6)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     masonry-rails (0.2.4)
@@ -166,7 +163,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
-  less
   masonry-rails (~> 0.2.0)
   paperclip (~> 4.0.0)
   pg
