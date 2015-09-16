@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: zbest-payment
+  api_key: '229479746653662'
+  api_secret: FzKmZQcHwbzx7NAqLr2wgpsbDtk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: zbest-payment
+  api_key: '229479746653662'
+  api_secret: FzKmZQcHwbzx7NAqLr2wgpsbDtk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: zbest-payment
+  api_key: '229479746653662'
+  api_secret: FzKmZQcHwbzx7NAqLr2wgpsbDtk
+  enhance_image_tag: true
+  static_image_support: false

@@ -17,6 +17,8 @@ gem 'devise', '~> 3.1.0.rc2'
 gem 'paperclip', '~> 4.0.0'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails', '~>0.2.0'
+gem 'cloudinary'
+
 
 
 group :development, :test do
