@@ -14,11 +14,11 @@
             solutionimg=document.getElementById("solution_img");
             if(el.className=="solution1 btn-lg btn-success")
             {
-                solutionimg.src='/images/Solutions/solution1.jpg';
+                solutionimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/solutions/solution1.jpg';
             }
             else if(el.className=="solution2 btn-lg btn-success")
             {
-                solutionimg.src='/images/Solutions/solution2.jpg';
+                solutionimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/solutions/solution2.jpg';
             }
 
             return false;
@@ -50,7 +50,7 @@
                 </td>
                 <td>
                     <div id="solution_section">
-                        <%= link_to image_tag("/images/Solutions/solution1.jpg", :id=>"solution_img")%>
+                        <%= link_to cl_image_tag("solutions/solution1.jpg", :id=>"solution_img")%>
                     </div>
                 </td>
             </tr>
@@ -62,11 +62,11 @@
             productimg=document.getElementById("product_img");
             if(el.className=="product1 btn-lg btn-success")
             {
-                productimg.src='/images/Products/product1.jpg';
+                productimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product1.jpg';
             }
             else if(el.className=="product2 btn-lg btn-success")
             {
-                productimg.src='/images/Products/product2.jpg';
+                productimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product2.jpg';
             }
 
             return false;
@@ -92,7 +92,7 @@
                 </td>
                 <td>
                     <div id="solution_section">
-                        <%= link_to image_tag("/images/Products/product1.jpg", :id=>"product_img")%>
+                        <%= link_to image_tag("http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product1.jpg", :id=>"product_img")%>
                     </div>
                 </td>
             </tr>
@@ -297,7 +297,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="images/Joinus/marketing.jpg" class="img-responsive img-circle" alt="">
+                        <img src="http://res.cloudinary.com/zbest-payment/image/upload/v1/joinus/marketing.jpg" class="img-responsive img-circle" alt="">
                         <h4>Marketing</h4>
                         <p class="text-muted">Copywriter</p>
                         <p class="text-muted">E-commerce Specialist</p>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="images/Joinus/Design.jpg" class="img-responsive img-circle" alt="">
+                        <img src="http://res.cloudinary.com/zbest-payment/image/upload/v1/joinus/Design.jpg" class="img-responsive img-circle" alt="">
                         <h4>Design</h4>
                         <p class="text-muted">Website Designer</p>
                         <p class="text-muted">Advertise Designer</p>
@@ -330,7 +330,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="images/Joinus/Accounting.jpg" class="img-responsive img-circle" alt="">
+                        <img src="http://res.cloudinary.com/zbest-payment/image/upload/v1/joinus/Accounting.jpg" class="img-responsive img-circle" alt="">
                         <h4>Accounting</h4>
                         <p class="text-muted">Account Coordinator</p>
                         <p class="text-muted">Social Media Manager</p>
