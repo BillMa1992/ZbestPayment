@@ -3,6 +3,13 @@ Rails.application.routes.draw do
 
   devise_for :users
   root "pages#_index"
+  get "solutions" => "pages#solutions"
+  get "products" => "pages#products"
+  get "services" => "pages#services"
+  get "joinus" => "pages#joinus"
+  get "contact" => "pages#contactus"
+  get "privacy" => "pages#privacy"
+  
   # get "about" => "pages#about"
   
 

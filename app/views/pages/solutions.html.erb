@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    function solution_toggle(el){
+        solutionimg=document.getElementById("solution_img");
+        if(el.className=="solution1 btn-lg btn-success")
+        {
+            solutionimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/solutions/solution1.jpg';
+        }
+        else if(el.className=="solution2 btn-lg btn-success")
+        {
+            solutionimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/solutions/solution2.jpg';
+        }
+
+        return false;
+    }
+</script>
+<div id="solutions">
+    <div class="container" style="width:800px;">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Solutions</h2>
+        </div>
+        <p class="section-subheading text-muted">Zbest Payment provides multiply payment solutions by cooperating with most of the currently popular banks and able to garentee the fluency during each payment behavior.</p>
+    </div>
+
+    <div class="col-lg-12 text-center">
+        <tr>
+            <td>
+                <div id="solution_nav">
+                    
+                    <button class="solution1 btn-lg btn-success" onclick="solution_toggle(this);" style="height:50px; width:350px">Payment Options</button>
+                
+                    <button class="solution2 btn-lg btn-success" onclick="solution_toggle(this);" style="height:50px; width:350px" >Bank Card Brands & Associations</button>
+                </div>
+            </td>
+            <td>
+                <div id="solution_section">
+                    <%= link_to cl_image_tag("solutions/solution1.jpg", :id=>"solution_img")%>
+                </div>
+            </td>
+        </tr>
+    </div>
+</div>

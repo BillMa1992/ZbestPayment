@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    function product_toggle(el){
+        productimg=document.getElementById("product_img");
+        if(el.className=="product1 btn-lg btn-success")
+        {
+            productimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product1.jpg';
+        }
+        else if(el.className=="product2 btn-lg btn-success")
+        {
+            productimg.src='http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product2.jpg';
+        }
+
+        return false;
+    }
+</script>
+<div id="products">
+    <div class="container" style="width:800px;">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Products</h2>
+        </div>
+        <p class="section-subheading text-muted">Rangling from Hardware to Software, Zbest Payment provide complete and systematical products for our clients.</p>
+    </div>
+
+    <div class="col-lg-12 text-center">
+        <tr>
+            <td>
+                <div id="product_nav">
+                    
+                    <button class="product1 btn-lg btn-success" onclick="product_toggle(this);" style="height:50px; width:350px">Hardware</button>
+                
+                    <button class="product2 btn-lg btn-success" onclick="product_toggle(this);" style="height:50px; width:350px" >Software</button>
+                </div>
+            </td>
+            <td>
+                <div id="solution_section">
+                    <%= link_to image_tag("http://res.cloudinary.com/zbest-payment/image/upload/v1/products/product1.jpg", :id=>"product_img")%>
+                </div>
+            </td>
+        </tr>
+    </div>
+</div>

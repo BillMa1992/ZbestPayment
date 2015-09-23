@@ -2,22 +2,11 @@
 $body-bg-inverse:	#2c3e50;
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$navbar-default-bg: #92c26f;
-$navbar-default-link-color: #ecf0f1;
-$navbar-default-link-hover-color: #fed136;
-$navbar-default-brand-hover-color: #fed136;
+$navbar-default-link-hover-color: #92c26f;
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
-.center {
-     text-align: center;
-}
 
-.navbar-brand {
-     font-weight: bold;
-}
 
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: red;
-}
+
