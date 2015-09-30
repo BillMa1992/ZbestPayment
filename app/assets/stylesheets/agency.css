@@ -185,11 +185,11 @@ footer p {
 }
 
 #zbest_nav {
-    background-color: transparent;
-    background: transparent;
+    background: #3a86ba;
     border-color: transparent;
     z-index:100;
     margin:0 auto;
+    width:100%;
 }
 .navbar a {
     color: white;
