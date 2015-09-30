@@ -2,11 +2,7 @@
  
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    
 }
 
 h1,
@@ -40,13 +36,13 @@ hr {
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px;
+    font-weight: bold;
+    
 }
 
 .img-full {
@@ -73,12 +69,16 @@ hr {
     border-color: #999999;
 }
 
-.box {
+.header-bg-box {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
-    background: rgba(255,255,255,0.9);
 }
+.homebox{
+    background-color:#eeeeee;
+    padding: 30px 30px;
+}
+
 
 .intro-text {
     text-transform: uppercase;
@@ -112,13 +112,15 @@ footer p {
     .brand {
         display: inherit;
         margin: 0;
-        padding: 30px 0 10px;
-        text-align: center;
+        padding: 30px 80px;
+        text-align: left;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
+        font-size: 1em;
         font-weight: 700;
         line-height: normal;
+        float:left;
+
         color: #fff;
     }
 
@@ -133,49 +135,22 @@ footer p {
 
     .address-bar {
         display: inherit;
-        margin: 0;
-        padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        padding: 20px 60px;
+        text-align: right;
         text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: #fff;
-    }
-
-    .navbar {
-        border-radius: 0;
+        font-size: 0.7em;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        color: #000;
     }
 
     .navbar-header {
         display: none;
     }
 
-    .navbar {
-        min-height: 0;
-    }
-
-    .navbar-default {
-        border: none;
-        background: #fff;
-        background: rgba(255,255,255,0.9);
-    }
-
-    .nav>li>a {
-        padding: 35px;
-    }
-
-    .navbar-nav>li>a {
-        line-height: normal;
-    }
-
     .navbar-nav {
-        display: table;
-        float: none;
-        margin: 0 auto;
-        table-layout: fixed;
-        font-size: 1.4em;
+        font-size: 1em;
+        font-color:white;
     }
 }
 
@@ -207,4 +182,35 @@ footer p {
     width:80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#zbest_nav {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    z-index:100;
+    margin:0 auto;
+}
+.navbar a {
+    color: white;
+}
+
+#foot_navbar a {
+    color:#eeeeee;
+}
+
+#myDIV {
+    color: red;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {color: blue;}
 }

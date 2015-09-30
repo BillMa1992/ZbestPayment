@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get "joinus" => "pages#joinus"
   get "contact" => "pages#contactus"
   get "privacy" => "pages#privacy"
+  get "job1"=>"pages#Marketingjob1"
+  get "job2"=>"pages#Marketingjob2"
+  get "job3"=>"pages#Marketingjob3"
   
   # get "about" => "pages#about"
   

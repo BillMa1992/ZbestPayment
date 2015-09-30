@@ -13,6 +13,15 @@ class PagesController < ApplicationController
   end
   def privacy
   end
+  def Marketingjob1
+    render "pages/Jobs/Marketingjob1"
+  end
+  def Marketingjob2
+    render "pages/Jobs/Marketingjob2"
+  end
+  def Marketingjob3
+    render "pages/Jobs/Marketingjob3"
+  end
 
 
 end

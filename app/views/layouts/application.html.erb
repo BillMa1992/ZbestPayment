@@ -12,40 +12,38 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body id="page-top" class="index">
 <%= render 'layouts/header' %>
   
-  <div class="container box">
+ 
   	<% flash.each do |name, msg| %>
   		<%= content_tag(:div, msg, class: "alert alert-info") %>
   	<% end %>
 
   	<%= yield %>
-  </div>
+
   <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <span class="copyright">Copyright &copy; Zbest Payment 2015</span>
-              </div>
-              <div class="col-md-4">
-                  <ul class="list-inline social-buttons">
-                      <li><a href="#"><i class="fa fa-twitter"></i></a>
-                      </li>
-                      <li><a href="#"><i class="fa fa-facebook"></i></a>
-                      </li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <ul class="list-inline quicklinks">
-                      <li><%= link_to "Privacy Policy", privacy_path %></li>
-                  </ul>
-              </div>
+
+      <div class="row" style="background:#999999; width:100%;" id=foot_navbar>
+          <div class="col-md-4 text-center">
+              <h3 class="copyright" style="font-size:medium;"><b><%= link_to "ZBESTPAYMENT", root_path %></b>
+              <font size="1"><%= link_to "@2015 Policy", privacy_path %></font></h3>
+          </div>
+          
+          <div class="col-md-8">
+             <h3 style="text-align:center; font-size:medium; color:#999999;"> 
+                <%= link_to "Home", root_path %> |
+                <%= link_to "Solutions", solutions_path %> |
+                <%= link_to "Products", products_path %> |
+                <%= link_to "Services", services_path %> |
+                <%= link_to "Join Us", joinus_path %> |
+                <%= link_to "Contact", contact_path %>
+            </h3>
           </div>
       </div>
+
   </footer>
   <script src="js/bootstrap.min.js"></script>
 
