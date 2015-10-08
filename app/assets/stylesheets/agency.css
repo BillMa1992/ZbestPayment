@@ -7,6 +7,7 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
     
 }
 header {
@@ -41,8 +42,8 @@ header nav ul li a:hover{
 }
 
 header nav ul li a.link-1 { background-color: #00c0e4; }
-header nav ul li a.link-2 { background-color: #e6567a; }
-header nav ul li a.link-3 { background-color: #eac14d; }
+header nav ul li a.link-2 { background-color: #27ae60; }
+header nav ul li a.link-3 { background-color: #2980b9; }
 header nav ul li a.link-4 { background-color: #5bd999; }
 
 section {
@@ -54,8 +55,8 @@ section {
 }
 
 section#Marketing { background-color: #00c0e4;}
-section#OnlineOrdering { background-color: #eac14d; }
-section#ECommerce { background-color: #e6567a; }
+section#OnlineOrdering { background-color: #2980b9; }
+section#ECommerce { background-color: #27ae60; }
 section#AppPay { background-color: #5bd999; }
 
 section h2 {
@@ -289,4 +290,108 @@ footer p {
 /* Standard syntax */
 @keyframes mymove {
     50% {color: blue;}
+}
+
+
+
+/*Online Ordering*/
+#Ordering{
+    width: 100%;
+  text-align:center;
+}
+.whole{
+    display: inline-block; 
+}
+.type{
+    width: 300px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #eac80d;
+    height: 62px;
+    border-bottom: 3px solid #bfa30c;
+
+}
+
+.type p{
+    font-family:'Open Sans';
+    font-weight: 800;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+    
+
+}
+
+.plan{
+    width: 300px;
+    background-color: #2b2937;
+
+    border-radius: 0px 0px 5px 5px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+
+
+}
+.standard{
+    background-color: #1abc9c;
+    border-bottom: 3px solid #18937b;
+}
+
+.ultimate{
+    background-color: #5d6a9a;
+    border-bottom: 3px solid #474f6f;
+}
+.month{
+    font-size: 14px;
+    color: #575757;
+    padding: 0px;
+    margin: -10px;
+}
+
+
+
+.nodisplay{
+  opacity: 0.1;
+}
+
+.selected{
+  background-color:#1F1B36;
+  margin:0px;
+  padding:0px;
+}
+.Orderheader{
+    border-bottom: 1px solid #494a5a;
+    padding-bottom: 39px;
+
+
+}
+
+.Orderheader span{
+    font-size: 32px;   
+}
+
+sup{
+
+    font-size: 40px;
+}
+.content ul{
+    list-style: none;
+    font-size: 15px;
+    font-family:'Open Sans';
+    color: #9095aa;
+    padding: 0px;
+    margin: 0px;
+}
+.content ul li{
+border-bottom: 1px solid #494a5a;
+padding: 0px;
+margin: 0px;
+text-align: center;
+height: 52px;
+line-height: 52px;
 }
