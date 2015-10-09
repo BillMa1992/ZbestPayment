@@ -1,3 +1,20 @@
+<script>  
+<!--  // building select nav for mobile width only -->
+// show and hide sub menu
+$(function(){
+    $('nav ul li').hover(
+        function () {
+            //show its submenu
+            $('ul', this).slideDown(150);
+        }, 
+        function () {
+            //hide its submenu
+            $('ul', this).slideUp(150);         
+        }
+    );
+});
+//end
+</script>
 
 <div class="container" style="width:80%;">
     <div><img src="../img/logo.png" alt="" style="width:50%; margin-top:0px; float:left; width:100px;"></div>
@@ -20,17 +37,36 @@
             <a class="navbar-brand" href="#_index">Zbest Payment</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="container" style="width:82%; min-width:800px;">
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="fdw" class="container" style="width:82%; min-width:800px;">
+            <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right"> 
-                    <li><%= link_to "Home", root_path %></li>
-                    <li><%= link_to "Solutions", solutions_path %></li>
-                    <li><%= link_to "Products", products_path %></li>
+                    <li class="current"><%= link_to "Home", root_path %></li>
+                    <li><%= link_to "Solutions", solutions_path %>
+                        <ul style="display: none;" class="sub_menu">
+                            <li class="arrow_top"></li>
+                            <li><a href="#">Payment Processing</a></li>
+                            <li><a href="#">Cash Advance</a></li>
+                            <li><a href="#">PCI Compliance</a></li>
+                            <li><a href="#">ATM Service</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><%= link_to "Product", product1_path %>
+                        <ul style="display: none;" class="sub_menu">
+                            <li class="arrow_top"></li>
+                            <li><%= link_to "Payment Processing", product1_path %>
+                            <li><%= link_to "Gift & Loyalty Cards", product2_path %>
+                            <li><%= link_to "ATM machine", product3_path %>
+                        </ul>
+                    </li>
+
                     <li><%= link_to "Services", services_path %></li>
                     <li><%= link_to "Join Us", joinus_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <!-- /.navbar-collapse -->
  

@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   devise_for :users
   root "pages#_index"
   get "solutions" => "pages#solutions"
-  get "products" => "pages#products"
+  get "product1" => "pages#product1"
+  get "product2" => "pages#product2"
+  get "product3" => "pages#product3"
   get "services" => "pages#services"
   get "joinus" => "pages#joinus"
   get "contact" => "pages#contactus"

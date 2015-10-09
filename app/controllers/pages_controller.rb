@@ -3,7 +3,11 @@ class PagesController < ApplicationController
   end
   def solutions
   end
-  def products
+  def product1
+  end
+  def product2
+  end
+  def product3
   end
   def services
   end
