@@ -41,13 +41,13 @@ $(function(){
             <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right"> 
                     <li class="current"><%= link_to "Home", root_path %></li>
-                    <li><%= link_to "Solutions", solutions_path %>
+                    <li><%= link_to "Solution", solution1_path %>
                         <ul style="display: none;" class="sub_menu">
                             <li class="arrow_top"></li>
-                            <li><a href="#">Payment Processing</a></li>
-                            <li><a href="#">Cash Advance</a></li>
-                            <li><a href="#">PCI Compliance</a></li>
-                            <li><a href="#">ATM Service</a></li>
+                            <li><%= link_to "Payment Processing", solution1_path %></li>
+                            <li><%= link_to "Cash Advance", solution2_path %></li>
+                            <li><%= link_to "PCI Compliance", solution3_path %></li>
+                            <li><%= link_to "ATM Service", solution4_path %></li>
                         </ul>
                     </li>
 
@@ -62,7 +62,15 @@ $(function(){
                         </ul>
                     </li>
 
-                    <li><%= link_to "Services", services_path %></li>
+                    <li><%= link_to "Services", services_path %>
+                        <ul style="display: none;" class="sub_menu">
+                            <li class="arrow_top"></li>
+                            <li><a href="#Marketing">Marketing</a></li>
+                            <li><a href="#OnlineOrdering">Online Ordering</a></li>
+                            <li><a href="#ECommerce">E-Commerce</a></li>
+                            <li><a href="#AppPay">App/Payment</a></li>
+                        </ul>
+                    </li>
                     <li><%= link_to "Join Us", joinus_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
                 </ul>

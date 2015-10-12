@@ -1,0 +1,350 @@
+<script src="../js/dropdownLayer.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-dropdown-item').dropdownLayer({
+      'elemSelector': "js-dropdown-item",
+      'containerClass': "js-dropdown-items", 
+      'descriptionClass': "js-description",
+      'arrowClass': "js-dropdown-arrow",
+      'dropdownClass': "js-dropdown",
+      'dropdownContentClass': "js-dropdown-content",
+      'disableDropdownClass': "js-dropdown-disable"
+    });
+  });
+</script>
+
+<script type="text/javascript">
+    function toggleVisibility(divid) {
+    if (divid==1){
+        document.getElementById("Sol_Online_Div").style.display = "block";
+        document.getElementById("Sol_FacetoFace_Div").style.display = "none";
+        document.getElementById("Sol_Mobile_Div").style.display = "none";
+    }
+    if (divid==2)
+    {
+        document.getElementById("Sol_FacetoFace_Div").style.display = "block";
+        document.getElementById("Sol_Online_Div").style.display = "none";
+        document.getElementById("Sol_Mobile_Div").style.display = "none";
+    }
+    if (divid==3)
+    {
+        document.getElementById("Sol_FacetoFace_Div").style.display = "none";
+        document.getElementById("Sol_Online_Div").style.display = "none";
+        document.getElementById("Sol_Mobile_Div").style.display = "block";
+    }
+    }
+</script>
+
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Payment Processing</h1>
+                    <h3>Three ways to make your payment</h3>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+                        <li>
+                            <a href="#Solution_online" onclick="toggleVisibility(1);" class="btn btn-default btn-lg"><i class="fa fa-laptop fa-fw"></i> <span class="network-name">Online</span></a>
+                        </li>
+                        <li>
+                            <a href="#Solution_facetoface" onclick="toggleVisibility(2);" class="btn btn-default btn-lg"><i class="fa fa-smile-o fa-fw"></i> <span class="network-name">Face to Face</span></a>
+                        </li>
+                        <li>
+                            <a href="#Solution_mobile" onclick="toggleVisibility(3);" class="btn btn-default btn-lg"><i class="fa fa-mobile fa-fw"></i> <span class="network-name">Mobile/APP</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.intro-header -->
+<div id="Sol_Online_Div" style="position:absolute; top:477px; width:100%;">
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">E-Commerce:<br>Get your store online</h2>
+                        <p class="lead">
+                            Retail sales, according to a Forrester study, are expected to reach $327 billion by 2016 with 192 million Americans making a purchase online. <br>Shouldn't you have an ecommerce-enabled site that will attract buyers, increase sales and keep customers coming back?</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Payment Gateway Solution</h2>
+                        <p class="lead">Zbest Payment enables online payment processing with gateways at a lower rate. We can let you choose a gateway and provide technical supports to run it on your website. For example, with the Authorize.net gateway you can:<br></p>
+                        <td valign="top">
+                            <div class="col-lg-12 text-center persons1 js-dropdown-items">
+                                <div class="person1 js-dropdown-item">
+                                    <font size=2><p style="border-style:solid;border-color:black;"><strong>Click...</strong></p></font>
+                                    
+                                    <div class="js-description" style="position:fixed;">
+                                    <p style="text-align:left;">(1)Save time and money with easy, versatile implementation options<br>
+                                    (2)·Protect customer data and boost compliance efforts<br>
+                                    (3)·Automate your recurring payments and improve cash flow<br>
+                                    (4)·Enjoy peace of mind with seamless, secure connectivity<br>
+                                    (5)·Eliminate data entry errors by retrieving a pre-existing customer profile<br>
+                                    (6)·Maintain account-on-file information, quickly and efficiently with Account Updater<br>
+                                    (7)·Accept a wide range of credit and debit payment types including MasterCard®, Visa®, American Express®, Discover® and gift cards</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                     
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/dog.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Contact us today to get started accepting online payments!</h2>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+<div id="Sol_FacetoFace_Div" style="position:absolute; top:477px; width:100%; display:none;">
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">We will help you keep every customer:</h2>
+                        <p class="lead">
+                            We focus on all kinds of in-person payment processing and help you perfect your payment processing. You have made a lot of efforts into getting a customer in the door and having what they need. It’s a pity that if you don’t have their preferred payment method. Our mission is helping you to give your customers enough freedom to choose.</p>
+                        <p><strong>We accept All Major Forms of Payment</strong></p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Credit, Debit & Purchasing Card:</h2>
+                        <p class="lead">Zbest Payments provides total processing capabilities for credit, debit, Electronic Benefits Transfer (EBT), gift, loyalty and purchasing cards for all major card types.<br>
+                        </p>
+                        <td valign="top">
+                            <div class="col-lg-12 text-center persons1 js-dropdown-items">
+                                <div class="person1 js-dropdown-item">
+                                    <font size=2><p style="border-style:solid;border-color:black;"><strong>With Zbest payment, we will offer you these services:</strong></p></font>
+                                    
+                                    <div class="js-description" style="position:fixed;">
+                                        <p style="text-align:left;">
+                                        (1)Choose from a full range of terminals – we have one to suit your business specifics<br>
+                                        (2)Depend on good quality and contemporary design – the design of our terminals look good and will
+                                        (3)Fit with your business specifics – terminals can be stand-alone or integrated with your systems</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <p>This service make your custom’s payment processing easier, they could choose payment methods by themselves.</p>
+
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/dog.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Check Guarantee:</h2>
+                        <p class="lead">
+                            Provides peace of mind with guaranteed payment and reduced risk, allowing checks to be accepted with confidence.</p>
+                        <td valign="top">
+                            <div class="col-lg-12 text-center persons1 js-dropdown-items">
+                                <div class="person1 js-dropdown-item">
+                                    <font size=2><p style="border-style:solid;border-color:black;"><strong>Details</strong></p></font>
+                                    
+                                    <div class="js-description" style="position:fixed;">
+                                        <p style="text-align:left;">
+                                        Having Zbest payment Check Guarantee allows you to never have to worry about bad check writers again. Zbest payment guarantees the full amount of any check it approves, as long as all of our easy requirements have been followed at the point of sale. Businesses that use the Zbest payment Check Guarantee service can accept low numbered, out of town, and even out of state checks with confidence that they will be paid for the amount of any check that Zbest payment has approved.<br>Zbest payment reduces merchants’ risks when they accept checks, while providing an easy, hassle free payment option. With the Zbest payment Check Guarantee service you can increase your business’s profitability. Merchant’s who use the Zbest payment service don’t have to waste any of their valuable time or money chasing bad check writers. It pays to have the peace of mind of knowing that when Zbest payment approves your customer’s check you know it will be good, because Zbest payment guarantees it.<br>Zbest payment’s Check Guarantee program allows you to authorize and accept checks by running them through a check scanner at the point-of-sale. Verified checks are converted into electronic transactions and deposited directly into your specified bank account. If there are any problems with the accepted check, Zbest payment will pay you the face value of the accepted check and going after the customer is our responsibility.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Gift Card & Loyalty Cards:</h2>
+                        <p class="lead">Zbest Payments provides support for Gift Card processing for merchants from various businesses and industries. Gift card is a good way to enhance brand awareness for your product or services, encourage repeat business while also being an excellent source of extra revenue.</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-push-6  col-sm-6">
+                        <strong><p>Accurate, timely net settlement of gift cards and easy-to-use reporting<br><br>
+                        Single card with ability to carry gift balances for multiple merchants<br><br>
+                        Increase brand exposure and boost gift card sales by expanding the number of channels you utilize for card distribution<br><br>
+                        Simple web-based solution enables consumers to reload funds onto stored-value cards in real time from a credit card or checking account</p></strong>
+                    </div>
+
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/dog.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    
+</div>
+<div id="Sol_Mobile_Div" style="position:absolute; top:477px;width:100%;display:none;">
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">NO POS TERMINAL - NO PROBLEM. INTRODUCING PAYAPP MOBILE</h2>
+                        <p class="lead">
+                            With ZbestPay mobile, you don't need POS hardware for payment processing. Whether you have an iPhone, iPad or Android smartphone, you can process credit cards with PayApp, simply and easily. And have receipts emailed right to your mobile phone.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="content-section-b">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">WHAT IS IT?</h2>
+                        <p class="lead">ZbestPayApp Mobile is a mobile card reader and app that allows merchants to accept card payments from their iPhone, iPad or Android Smartphone. It includes a free mobile application, a free card reader and a ZbestPayApp Mobile account which offers useful features like discounts, sales tax, inventory mode and email receipts.<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <img class="img-responsive" src="img/dog.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="container" style="width:1000px;">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">BENEFITS OF PAYAPP</h2>
+                        <p class="lead">
+                            With ZbestPayApp Mobile's self boarding tool there are no lengthy contracts to complete and submit. And, built-in real-time underwriting means you can begin accepting payments almost instantly - in most cases, within 20 minutes of submitting the online application. Once your account is approved, simply download the free application onto your mobile device.</p>
+                        <h2 class="section-heading">Additional Benefits</h2>
+                        <p>
+                        (1)Scalable to your business needs - Expand your mobile payments acceptance needs without having to purchase additional point-of-sale terminals.
+                        (2)Everyone within your business with a mobile phone and a card reader can use ZbestPayApp Mobile.
+                        (3)No hidden fees.
+                        (4)Simplified, straight-forward statements that can be conveniently emailed to your mobile device</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <img class="img-responsive" src="img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Contact us today to get started accepting online payments!</h2>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+</div>
+

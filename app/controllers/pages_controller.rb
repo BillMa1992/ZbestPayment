@@ -1,7 +1,13 @@
 class PagesController < ApplicationController
   def home
   end
-  def solutions
+  def solution1
+  end
+  def solution2
+  end
+  def solution3
+  end
+  def solution4
   end
   def product1
   end

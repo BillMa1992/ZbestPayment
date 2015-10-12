@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   devise_for :users
   root "pages#_index"
-  get "solutions" => "pages#solutions"
+  get "solution1" => "pages#solution1"
+  get "solution2" => "pages#solution2"
+  get "solution3" => "pages#solution3"
+  get "solution4" => "pages#solution4"
   get "product1" => "pages#product1"
   get "product2" => "pages#product2"
   get "product3" => "pages#product3"
