@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   get "job1"=>"pages#Marketingjob1"
   get "job2"=>"pages#Marketingjob2"
   get "job3"=>"pages#Marketingjob3"
+
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
   
   # get "about" => "pages#about"
   
