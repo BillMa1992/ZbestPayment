@@ -18,7 +18,7 @@ gem 'paperclip', '~> 4.0.0'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails', '~>0.2.0'
 gem 'cloudinary'
-gem 'mail_form'
+gem 'mail_form', '~> 1.5.1' 
 gem 'simple_form'
 
 
