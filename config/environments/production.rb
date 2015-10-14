@@ -78,8 +78,9 @@ Rails.application.configure do
 
   # Required for Heroku
   # Note to set this to your actual host
-  config.action_mailer.default_url_options = { :host => 'gis-oversea.com' }
+  config.action_mailer.default_url_options = { :host => 'zbestpayment.herokuapp.com' }
   
+  Rails.application.routes.default_url_options[:host] = 'zbestpayment.herokuapp.com'
   
   # Sets paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
@@ -90,4 +91,18 @@ Rails.application.configure do
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: ENV["GMAIL_DOMAIN"],
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["GMAIL_USERNAME"],
+  password: ENV["GMAIL_PASSWORD"]
+  }
 end
