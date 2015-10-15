@@ -1,16 +1,87 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+
+<div class="intro-header">
+    <div class="container" style="height:500px;">
+
+        <div class="row">
+            <div class="col-lg-12" style="top:100px;">
+                <div>
+                    <hr>
+                    <h1>Contact </h1>
+                    <h2><strong>Zbest Payment</strong></h2>
+                    <hr>                    
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
+    <!-- /.container -->
+
 </div>
+<div class="container" style="width:1000px;">
+    <div class="box">
+            
+        <div class="col-lg-8">
+            <font color=lightgrey><h4>INFO</h4></font>
+            <font color=#2980b9><h3 class="section-heading"><strong>Contact Us</strong></h3></font>
+            <p class="text-muted">ZbestPayment is considered one of the leaders in the merchant processing industry. We have been recognized for our customer service, honesty and merchant loyalty towards payment industry. We are based in New York City and provide payment support in multiply industries.</p>
+            <div class="col-md-6">
+                <font color=#2980b9><h4 class="section-heading"><strong>Office</strong></h4></font>
+                <p class="text-muted">Phone:
+                <strong>267.442.8792</strong>
+                </p>
+                <p class="text-muted">Email:
+                    <strong><a href="mailto:bill.m@zbestpayment.com">bill.m@zbestpayment.com</a></strong>
+                </p>
+                <p class="text-muted">Address:
+                    130-30 31st Ave, Suite 703
+                    <br>Flushing, NY 07310
+                </p>
+            </div>
+            <div class="col-md-6">
+                <font color=#2980b9><h4 class="section-heading"><strong>Support</strong></h4></font>
+                <p class="text-muted">HR:
+                <strong>267.442.8792</strong>
+                </p>
+                <p class="text-muted">Sales:
+                    <strong>267.442.8792</strong>
+                </p>
+                <p class="text-muted">Tech:
+                    <strong>267.442.8792</strong>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <font color=lightgrey><h4>CONTACT</h4></font>
+            <font color=#2980b9><h3 class="section-heading"><strong>FORM</strong></h3></font>
+            <div class="container">
+                <div class="row">
+                    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+                        <%= f.input :name, :required => true, :placeholder => '    Your Name *' %>
+                        <%= f.input :email, :required => true, :placeholder => '    Your Email *' %>
+                        <%= f.input :message, :as => :text, :required => true, :placeholder => '    Your Message *'%>
+                        <div class= "hidden">
+                          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                        </div>
+                        <div>
+                          </br>
+                          <%= f.button :submit, 'Send message', :class=> "btn btn-primary", :style=> "margin-left:280px;"%>
+                        </div>
+                    <% end %>
+                      
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    <iframe width="100%" height="520" frameborder="0" src="https://mqyznb.cartodb.com/viz/905adeda-736f-11e5-8329-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</div>
+
+    
+
+
+
+
+
+
+

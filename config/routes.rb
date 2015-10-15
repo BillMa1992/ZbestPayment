@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   get "product3" => "pages#product3"
   get "services" => "pages#services"
   get "joinus" => "pages#joinus"
-  get "contact" => "pages#contactus"
   get "privacy" => "pages#privacy"
   get "job1"=>"pages#Marketingjob1"
   get "job2"=>"pages#Marketingjob2"
