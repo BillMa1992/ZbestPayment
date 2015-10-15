@@ -616,26 +616,3 @@ div#MobilePay { background-color: rgba(222,222,222,0.5); }
     }
 }
 
-/*Contact Form*/
-#new_contact label{
-  display:none;
-}
-#new_contact input{
-  margin-top:10px;
-  border-radius: 5px;
-}
-#contact_name{
-  border: 2px solid #8AC007;
-  width:400px;
-}
-#contact_email{
-  border: 2px solid #8AC007;
-  width:400px;
-}
-#contact_message{
-  width:400px;
-  height:200px;
-  margin-top:10px;
-  border-radius: 5px;
-  border: 2px solid #8AC007;
-}

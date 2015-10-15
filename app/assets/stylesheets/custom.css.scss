@@ -28,3 +28,27 @@ border-color: #d6e9c6;
 color: #468847;
 text-align: left;
 }
+
+/*Contact Form*/
+#new_contact label{
+  display:none;
+}
+#new_contact input{
+  margin-top:10px;
+  border-radius: 5px;
+}
+#contact_name{
+  border: 2px solid #8AC007;
+  width:400px;
+}
+#contact_email{
+  border: 2px solid #8AC007;
+  width:400px;
+}
+#contact_message{
+  width:400px;
+  height:200px;
+  margin-top:10px;
+  border-radius: 5px;
+  border: 2px solid #8AC007;
+}
